@@ -38,8 +38,8 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3> Lab 4: RF Communication, Navigation and Final Demo </h3>
-        <img src="/bak94/ece3400/images/final_robot.JPG">
-        <img src="/bak94/ece3400/images/final_basestation.JPG">
+        <img src="images/final_robot.JPG">
+        <img src="images/final_basestation.JPG">
         
     <h3>Objectives:</h3>
     <ul>
@@ -63,8 +63,8 @@
         
         <h3>RF Communication:</h3>
         <p>We first soldered pins to the RF PCB adapters so we could insert them into our breadboards. The component can be seen below. Once this was done, we programmed the robot and base station to communicate using the transceivers. We first sent the time between the two devices, as seen below.</p>
-        <img src="/bak94/ece3400/images/rf_transmitter.JPG">
-        <img src="/bak94/ece3400/images/rf_measurments.JPG">
+        <img src="images/rf_transmitter.JPG">
+        <img src="images/rf_measurments.JPG">
         
         <h3>Navigation:</h3>
         <p>We then started working on a navigation algorithm for our robot. We initially tried to implement a depth first search. We implemented an algorithm to do this based on the ultrasonic sensor readings. We wrote a test code to send simulated distances based on a maze layout. Unfortunately, the ultrasonic sensors were not as reliable as we had hoped. As a result, the robot would mistakenly think that there was a wall when there was not or vice versa. As such, we switched to a simple right wall follow approach, as this is more robust to errors. The DFS approach would be unable to resolve mistakes if it loses track of where it is in the maze, but right wall follow does not have this issue. We worked to ensure that it would handle cases where it needed to turn left, as well as preventing the robot from just turning around after a left turn. </p>
@@ -72,7 +72,7 @@
         <h3>PID:</h3>
         <p>We also implemented PID for the servos. This again suffered from the same issue, where the unreliable measurements from the ultrasonic sensors affected performance. Additionally, the servos themselves were very inconsistent. As such, settings that worked at one point would fail a few hours later. Below is a video of one of the more successful tunes, but unfortunately it was not this good for our final demo.</p>
         <video width="540" height="960" controls>
-        <source src="/bak94/ece3400/images/good_pid.MOV">
+        <source src="images/good_pid.MOV">
        </video>
         <h3>IR Measurement:</h3>
         <p>We used the basic IR code and circuits from the previous labs to measure the IR beacon frequency. I also implemented a new feature that helped improve the results, automatic IR thresholding. The robot would switch the ADC to the IR sensor pin and measure the voltage from the ambient light. We would then multiply that by a constant and use that as our threshold.</p>
@@ -80,13 +80,13 @@
         <h3>Final Demo:</h3>
         <p>A video of our final demo can be seen below. The PID did not perform particularly well. The long distance between some of the walls also made the ultrasonic sensors unreliable, so the robot spent a lot of time randomly turning. Despite this, we successfully measured the frequency of the two beacons on the fly. The largest failure was that it did not stop after measuring the second beacon, which is strange because it did so in testing.</p>
         <video width="540" height="960" controls>
-        <source src="/bak94/ece3400/images/final_demo_small_part1.mov">
+        <source src="images/final_demo_small_part1.mov">
        </video>
         <video width="540" height="960" controls>
-        <source src="/bak94/ece3400/images/final_demo_small_part2.mov">
+        <source src="images/final_demo_small_part2.mov">
        </video>
         <video width="540" height="960" controls>
-        <source src="/bak94/ece3400/images/final_demo_small_part3.mov">
+        <source src="images/final_demo_small_part3.mov">
        </video>
       </section>
     </div>
