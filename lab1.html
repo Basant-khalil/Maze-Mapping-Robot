@@ -40,7 +40,7 @@
         <h3>
     Lab 1: Ultrasonic Navigation</h3>
 
- <img src="/bak94/ece3400/images/us_setup.JPG">
+ <img src="images/us_setup.JPG">
 
 <h3>Objectives:</h3>
 <ul>
@@ -67,21 +67,21 @@
 <h3>Servo Control</h3>
 <p>We used the servos and the delay function to move the robot in a specific pattern. We made it move forward approximately 20 cm, turn right 90 degrees, turn left 270 degrees, move 20 cm forward back to where it started, and then turn right 180 degrees, so it ends facing the same direction it started. A video of this can be seen below. This assignment required us to carefully adjust parameters and delays in order for the robot to turn correctly and move straight.</p>
 <video width="540" height="960" controls>
-  <source src="/bak94/ece3400/images/servo_test2.mov">
+  <source src="images/servo_test2.mov">
  </video>
 <h3>Ultrasonic Measurement</h3>
 <p>We next installed the ultrasonic sensors on the robot frame. We used the code supplied for this assignment to measure the distances on each sensor and output to the serial monitor. The video below shows the serial monitor output as I move my hand forwards and backwards in front of the left ultrasonic sensor. Once that was working, we positioned blocks set distances from the robot to ensure that the sensors were working properly. An image of this can be seen at the top of this page.</p>
 
  <video width="540" height="960" controls>
-  <source src="/bak94/ece3400/images/US_test.MOV">
+  <source src="images/US_test.MOV">
  </video>
 <h3>Course Navigation</h3>
 <p>Finally, we programmed the robot to navigate around a set course. A diagram of the course can be found below. All of the turns had to be in place, even though they are not drawn as such in the figure. We had to use what we learned from the previous parts to succeed. We had to make sure that the turns were correct and that the robot moved straight. We also had to use the ultrasonic sensors to ensure that the robot turned when it needed to. We also needed to use serial communication to print out the robot’s position and distance measures. The largest challenge was the inconsistency. With the exact same code, we could have a few near perfect runs along with many failures, as well as different legs of the same run behaving differently, despite using the same movement code. After many attempts, we finally got it working. A video of this can be seen below the course image, and the serial monitor output can be seen below that. While it may look like the robot stopped early as it finishes forward of where it started, this was an active choice. The robot pivots near the back, and we did not have a lot of room between the end of the course and the end of the table. As such, we could not have it turn in a location where it would finish where it started without falling off the table.</p>
-<img src="/bak94/ece3400/images/lab1 course.jpeg">
+<img src="images/lab1 course.jpeg">
 <video width="540" height="960" controls>
-  <source src="/bak94/ece3400/images/final_navigation copy2.mov">
+  <source src="images/final_navigation copy2.mov">
  </video>
-<img src="/bak94/ece3400/images/final_serial_monitor .png">
+<img src="images/final_serial_monitor .png">
       </section>
     </div>
 
